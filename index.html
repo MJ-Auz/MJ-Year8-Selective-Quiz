@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Year 8 Selective Quiz!</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .options label {
+      display: block;
+      margin-left: 20px;
+      text-align: left;
+    }
+    .submit-btn, .next-btn, .prev-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .result {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .feedback {
+      font-style: italic;
+      margin-top: 5px;
+      text-align: left;
+    }
+    #timer {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #submitButton {
+      display: none;
+    }
+  
+    .question p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+  
+    .options input[type="radio"]:checked + span {
+      background-color: #d0f0c0;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .question p {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    .options label {
+      font-size: 18px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    .options input[type="radio"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    .options input[type="radio"]:checked + span {
+      background-color: #d0f0c0;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    #timer {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: #007acc;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: right;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    body {
+      background-color: #f0f8ff;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #2a2a2a;
+      margin-bottom: 30px;
+    }
+
+    .submit-btn, .next-btn, .prev-btn {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover, .next-btn:hover, .prev-btn:hover {
+      background-color: #005fa3;
+    }
+
+    .result {
+      background-color: #e7f4e4;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 5px solid #4caf50;
+    }
+
+    .prev-btn {
+      margin-right: 20px;
+    }
+
+    .prev-btn, .next-btn {
+      width: 180px;
+      text-align: center;
+    }
+
+    .button-container {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background-color: #ffffffcc;
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<div style="margin-bottom: 20px;">
+  <label for="setSelector"><strong>Select a Question Set:</strong></label>
+  <select id="setSelector" onchange="location.href='?set=' + this.value">
+    <option value="ProbabilityQuestions.js">Probability</option>
+    <option value="AlgebraQuestions.js">Algebra</option>
+    <option value="questions_4.js">Set 4</option>
+    <option value="questions_5.js">Set 5</option>
+  </select>
+</div>
+
+<h1>Year 8 Selective Quiz!</h1>
+<div id="timer">Time Remaining: <span id="time">40:00</span></div>
+<div id="quizContainer" style="display:none;">
+  <form id="quizForm"></form>
+  <button class="submit-btn" id="submitButton" onclick="submitQuiz()">Submit Quiz</button>
+  <div class="result" id="result"></div>
+</div>
+<div id="quizContainer" style="display:none;"><form id="quizForm"></form></div>
+
+</div>
+
+
+<script>
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+function loadScript(src, id, callback) {
+  const existing = document.getElementById(id);
+  if (existing) existing.remove();
+  const script = document.createElement("script");
+  script.src = src;
+  script.id = id;
+  script.onload = callback;
+  document.body.appendChild(script);
+}
+
+function loadSet(setFile) {
+  document.getElementById("quizForm").innerHTML = "";
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("quizContainer").style.display = "none";
+
+  loadScript(setFile, "quizScript", function() {
+    loadScript("quiz_logic.js", "logicScript", function() {
+      currentQuestion = 0;
+      answers = Array(questions.length).fill(null);
+      document.getElementById("quizContainer").style.display = "block";
+      renderQuestion(currentQuestion);
+      startTimer(2400);
+    });
+  });
+}
+
+window.onload = function () {
+  const selectedSet = getQueryParam("set") || "ProbabilityQuestions.js";
+  document.getElementById("setSelector").value = selectedSet;
+  loadSet(selectedSet);
+};
+</script>
+
+
+
+
+</body>
+</html>

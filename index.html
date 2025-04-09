@@ -161,7 +161,7 @@ function loadSet(setFile) {
   document.getElementById("quizContainer").style.display = "none";
 
   loadScript(setFile, "quizScript", function() {
-    loadScript("quiz_logic_final.js", "logicScript", function() {
+    loadScript("quiz_logic.js", "logicScript", function() {
       currentQuestion = 0;
       answers = Array(questions.length).fill(null);
       document.getElementById("quizContainer").style.display = "block";

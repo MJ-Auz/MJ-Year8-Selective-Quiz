@@ -1,242 +1,490 @@
 const questions = [
   {
-    "q": "What is the main lesson of the story about the dog and the shadow?",
+    "q": "Frottage became prominent as part of which artistic movement?",
     "options": [
-      "Always share what you have with others.",
-      "Appearances can be deceiving.",
-      "Dogs shouldn't go near water.",
-      "Don't cross bridges with food."
+      "Impressionism",
+      "Realism",
+      "Surrealism",
+      "Minimalism"
     ],
-    "answer": 1
+    "answer": 2,
+    "passage": "Passage 1: Informational Text Frottage, a technique developed in the early 20th century, is the art of creating texture by rubbing a surface with a pencil or crayon. Originating from the French word *frotter*, meaning to rub, frottage involves placing paper over a textured surface\u2014such as wood grain, leaves, or stone\u2014and gently rubbing to reveal the texture below. This method highlights intricate patterns that would otherwise go unnoticed. Frottage gained prominence as part of the Surrealist movement. Artists like Max Ernst used it to layer abstract forms resembling landscapes or creatures. Beyond artistic uses, archaeologists use frottage to document carvings, and educators use it to teach about texture. A similar technique, brass rubbing, captures details from memorial plaques but focuses on precision and detail."
   },
   {
-    "q": "What emotion best describes the dog's action when he saw the reflection?",
+    "q": "What is a key difference between frottage and brass rubbing?",
     "options": [
-      "Fear",
-      "Greed",
-      "Joy",
-      "Confusion"
+      "Frottage is more expensive",
+      "Brass rubbing uses random textures",
+      "Brass rubbing focuses on precision",
+      "Frottage is used only in schools"
     ],
-    "answer": 1
+    "answer": 2,
+    "passage": "Passage 1: Informational Text Frottage, a technique developed in the early 20th century, is the art of creating texture by rubbing a surface with a pencil or crayon. Originating from the French word *frotter*, meaning to rub, frottage involves placing paper over a textured surface\u2014such as wood grain, leaves, or stone\u2014and gently rubbing to reveal the texture below. This method highlights intricate patterns that would otherwise go unnoticed. Frottage gained prominence as part of the Surrealist movement. Artists like Max Ernst used it to layer abstract forms resembling landscapes or creatures. Beyond artistic uses, archaeologists use frottage to document carvings, and educators use it to teach about texture. A similar technique, brass rubbing, captures details from memorial plaques but focuses on precision and detail."
   },
   {
-    "q": "Which word best replaces \u201csnatch\u201d as used in the passage?",
+    "q": "How does frottage encourage creativity in art?",
     "options": [
-      "Drop",
-      "Bite",
-      "Grab",
-      "Toss"
+      "By showing existing paintings",
+      "Through spontaneous texture patterns",
+      "By using expensive materials",
+      "Through copying traditional art"
     ],
-    "answer": 2
+    "answer": 1,
+    "passage": "Passage 1: Informational Text Frottage, a technique developed in the early 20th century, is the art of creating texture by rubbing a surface with a pencil or crayon. Originating from the French word *frotter*, meaning to rub, frottage involves placing paper over a textured surface\u2014such as wood grain, leaves, or stone\u2014and gently rubbing to reveal the texture below. This method highlights intricate patterns that would otherwise go unnoticed. Frottage gained prominence as part of the Surrealist movement. Artists like Max Ernst used it to layer abstract forms resembling landscapes or creatures. Beyond artistic uses, archaeologists use frottage to document carvings, and educators use it to teach about texture. A similar technique, brass rubbing, captures details from memorial plaques but focuses on precision and detail."
   },
   {
-    "q": "What is the writer\u2019s main purpose in the letter to the editor?",
     "options": [
-      "To describe a family walk",
-      "To praise the council",
-      "To raise awareness and demand action",
-      "To tell a personal story"
+      "Replace other art forms",
+      "Teach about Surrealism",
+      "Explore textures creatively",
+      "Critique old techniques"
     ],
-    "answer": 2
+    "answer": 2,
+    "passage": "Passage 1: Informational Text Frottage, a technique developed in the early 20th century, is the art of creating texture by rubbing a surface with a pencil or crayon. Originating from the French word *frotter*, meaning to rub, frottage involves placing paper over a textured surface\u2014such as wood grain, leaves, or stone\u2014and gently rubbing to reveal the texture below. This method highlights intricate patterns that would otherwise go unnoticed. Frottage gained prominence as part of the Surrealist movement. Artists like Max Ernst used it to layer abstract forms resembling landscapes or creatures. Beyond artistic uses, archaeologists use frottage to document carvings, and educators use it to teach about texture. A similar technique, brass rubbing, captures details from memorial plaques but focuses on precision and detail."
   },
   {
-    "q": "Which word best describes the tone of the letter?",
     "options": [
+      "The artist\u2019s emotions",
+      "The tool sharpness",
+      "Pressure and paper type",
+      "Age of the material"
+    ],
+    "answer": 2,
+    "passage": "Passage 1: Informational Text Frottage, a technique developed in the early 20th century, is the art of creating texture by rubbing a surface with a pencil or crayon. Originating from the French word *frotter*, meaning to rub, frottage involves placing paper over a textured surface\u2014such as wood grain, leaves, or stone\u2014and gently rubbing to reveal the texture below. This method highlights intricate patterns that would otherwise go unnoticed. Frottage gained prominence as part of the Surrealist movement. Artists like Max Ernst used it to layer abstract forms resembling landscapes or creatures. Beyond artistic uses, archaeologists use frottage to document carvings, and educators use it to teach about texture. A similar technique, brass rubbing, captures details from memorial plaques but focuses on precision and detail."
+  },
+  {
+    "q": "What central theme is explored in the poem?",
+    "options": [
+      "The beauty of nature",
+      "Confusion and inner turmoil",
+      "Celebration of dreams",
+      "Triumph over sorrow"
+    ],
+    "answer": 1,
+    "passage": "Passage 2: Poem \u2013 'A Dream Within a Dream' by Edgar Allan Poe Take this kiss upon the brow!\nAnd, in parting from you now,\nThus much let me avow \u2014\nYou are not wrong, who deem\nThat my days have been a dream...\n\nAll that we see or seem\nIs but a dream within a dream.\n\nI stand amid the roar\nOf a surf-tormented shore,\nAnd I hold within my hand\nGrains of the golden sand \u2014\nHow few! yet how they creep\nThrough my fingers to the deep,\nWhile I weep \u2014 while I weep!"
+  },
+  {
+    "q": "What does the image of 'surf-tormented shore' convey?",
+    "options": [
+      "Clash between dreams and reality",
+      "Nature\u2019s fury",
+      "Calm reflection",
+      "Speaker\u2019s turmoil and inner conflict"
+    ],
+    "answer": 3,
+    "passage": "Passage 2: Poem \u2013 'A Dream Within a Dream' by Edgar Allan Poe Take this kiss upon the brow!\nAnd, in parting from you now,\nThus much let me avow \u2014\nYou are not wrong, who deem\nThat my days have been a dream...\n\nAll that we see or seem\nIs but a dream within a dream.\n\nI stand amid the roar\nOf a surf-tormented shore,\nAnd I hold within my hand\nGrains of the golden sand \u2014\nHow few! yet how they creep\nThrough my fingers to the deep,\nWhile I weep \u2014 while I weep!"
+  },
+  {
+    "q": "Why does the speaker 'weep' while holding sand?",
+    "options": [
+      "Because of lost time",
+      "Out of joy",
+      "He\u2019s physically injured",
+      "He\u2019s on a beach holiday"
+    ],
+    "answer": 0,
+    "passage": "Passage 2: Poem \u2013 'A Dream Within a Dream' by Edgar Allan Poe Take this kiss upon the brow!\nAnd, in parting from you now,\nThus much let me avow \u2014\nYou are not wrong, who deem\nThat my days have been a dream...\n\nAll that we see or seem\nIs but a dream within a dream.\n\nI stand amid the roar\nOf a surf-tormented shore,\nAnd I hold within my hand\nGrains of the golden sand \u2014\nHow few! yet how they creep\nThrough my fingers to the deep,\nWhile I weep \u2014 while I weep!"
+  },
+  {
+    "options": [
+      "Double the fun",
+      "Recurring nightmares",
+      "Blurred boundaries between reality and illusion",
+      "Literal dreams"
+    ],
+    "answer": 2,
+    "passage": "Passage 2: Poem \u2013 'A Dream Within a Dream' by Edgar Allan Poe Take this kiss upon the brow!\nAnd, in parting from you now,\nThus much let me avow \u2014\nYou are not wrong, who deem\nThat my days have been a dream...\n\nAll that we see or seem\nIs but a dream within a dream.\n\nI stand amid the roar\nOf a surf-tormented shore,\nAnd I hold within my hand\nGrains of the golden sand \u2014\nHow few! yet how they creep\nThrough my fingers to the deep,\nWhile I weep \u2014 while I weep!"
+  },
+  {
+    "q": "What literary device is used in 'Grains of the golden sand'?",
+    "options": [
+      "Hyperbole",
+      "Alliteration",
+      "Irony",
+      "Metaphor"
+    ],
+    "answer": 1,
+    "passage": "Passage 2: Poem \u2013 'A Dream Within a Dream' by Edgar Allan Poe Take this kiss upon the brow!\nAnd, in parting from you now,\nThus much let me avow \u2014\nYou are not wrong, who deem\nThat my days have been a dream...\n\nAll that we see or seem\nIs but a dream within a dream.\n\nI stand amid the roar\nOf a surf-tormented shore,\nAnd I hold within my hand\nGrains of the golden sand \u2014\nHow few! yet how they creep\nThrough my fingers to the deep,\nWhile I weep \u2014 while I weep!"
+  },
+  {
+    "q": "Who are credited with the first powered flight?",
+    "options": [
+      "Leonardo da Vinci",
+      "Wright brothers",
+      "NASA scientists",
+      "Balloonists"
+    ],
+    "answer": 1,
+    "passage": "Passage 3: Informational \u2013 The History of Flight The history of flight stretches back centuries, with early attempts involving gliders and hot air balloons. The Wright brothers, in 1903, achieved the first powered flight using a propeller-driven plane. This breakthrough changed transportation forever. Since then, aviation has evolved dramatically, from jet engines to commercial airliners and even unmanned drones used for delivery and exploration."
+  },
+  {
+    "q": "What does 'powered flight' refer to?",
+    "options": [
+      "A balloon floating",
+      "Planes thrown by hand",
+      "Use of engines for thrust",
+      "Flying animals"
+    ],
+    "answer": 2,
+    "passage": "Passage 3: Informational \u2013 The History of Flight The history of flight stretches back centuries, with early attempts involving gliders and hot air balloons. The Wright brothers, in 1903, achieved the first powered flight using a propeller-driven plane. This breakthrough changed transportation forever. Since then, aviation has evolved dramatically, from jet engines to commercial airliners and even unmanned drones used for delivery and exploration."
+  },
+  {
+    "q": "How has aviation changed modern life?",
+    "options": [
+      "Made cars unnecessary",
+      "Made delivery and travel faster",
+      "Replaced rail travel completely",
+      "Slowed communication"
+    ],
+    "answer": 1,
+    "passage": "Passage 3: Informational \u2013 The History of Flight The history of flight stretches back centuries, with early attempts involving gliders and hot air balloons. The Wright brothers, in 1903, achieved the first powered flight using a propeller-driven plane. This breakthrough changed transportation forever. Since then, aviation has evolved dramatically, from jet engines to commercial airliners and even unmanned drones used for delivery and exploration."
+  },
+  {
+    "q": "Which is NOT mentioned as part of aviation progress?",
+    "options": [
+      "Jet engines",
+      "Hot air balloons",
+      "Space tourism",
+      "Drones"
+    ],
+    "answer": 2,
+    "passage": "Passage 3: Informational \u2013 The History of Flight The history of flight stretches back centuries, with early attempts involving gliders and hot air balloons. The Wright brothers, in 1903, achieved the first powered flight using a propeller-driven plane. This breakthrough changed transportation forever. Since then, aviation has evolved dramatically, from jet engines to commercial airliners and even unmanned drones used for delivery and exploration."
+  },
+  {
+    "q": "What tone does the author use to describe flight evolution?",
+    "options": [
+      "Disappointed",
+      "Humorous",
+      "Appreciative",
+      "Fearful"
+    ],
+    "answer": 2,
+    "passage": "Passage 3: Informational \u2013 The History of Flight The history of flight stretches back centuries, with early attempts involving gliders and hot air balloons. The Wright brothers, in 1903, achieved the first powered flight using a propeller-driven plane. This breakthrough changed transportation forever. Since then, aviation has evolved dramatically, from jet engines to commercial airliners and even unmanned drones used for delivery and exploration."
+  },
+  {
+    "q": "Why is Jasper running?",
+    "options": [
+      "To catch the bus",
+      "For exercise",
+      "From someone",
+      "Toward school"
+    ],
+    "answer": 0,
+    "passage": "Passage 4: Narrative \u2013 The Missed Bus Jasper raced down the hill, bag swinging wildly, heart pounding. The bus doors began to close. With a final leap, he thudded against the side, too late. As the bus rolled away, he stood breathless, defeated. But then a voice\u2014'Hey, need a lift?'\u2014and he turned to see a familiar face smiling from a car."
+  },
+  {
+    "q": "What emotion is conveyed when the bus leaves?",
+    "options": [
+      "Relief",
+      "Victory",
+      "Defeat",
+      "Joy"
+    ],
+    "answer": 2,
+    "passage": "Passage 4: Narrative \u2013 The Missed Bus Jasper raced down the hill, bag swinging wildly, heart pounding. The bus doors began to close. With a final leap, he thudded against the side, too late. As the bus rolled away, he stood breathless, defeated. But then a voice\u2014'Hey, need a lift?'\u2014and he turned to see a familiar face smiling from a car."
+  },
+  {
+    "q": "What does the story suggest at the end?",
+    "options": [
+      "Jasper is still alone",
+      "He finds help",
+      "He gives up",
+      "He walks home"
+    ],
+    "answer": 1,
+    "passage": "Passage 4: Narrative \u2013 The Missed Bus Jasper raced down the hill, bag swinging wildly, heart pounding. The bus doors began to close. With a final leap, he thudded against the side, too late. As the bus rolled away, he stood breathless, defeated. But then a voice\u2014'Hey, need a lift?'\u2014and he turned to see a familiar face smiling from a car."
+  },
+  {
+    "q": "Which phrase best shows urgency?",
+    "options": [
+      "Bag swinging calmly",
+      "Heart pounding",
+      "Car idling",
+      "Quiet morning"
+    ],
+    "answer": 1,
+    "passage": "Passage 4: Narrative \u2013 The Missed Bus Jasper raced down the hill, bag swinging wildly, heart pounding. The bus doors began to close. With a final leap, he thudded against the side, too late. As the bus rolled away, he stood breathless, defeated. But then a voice\u2014'Hey, need a lift?'\u2014and he turned to see a familiar face smiling from a car."
+  },
+  {
+    "options": [
+      "Humorous",
+      "Hopeful",
       "Angry",
-      "Sarcastic",
-      "Concerned",
+      "Mysterious"
+    ],
+    "answer": 1,
+    "passage": "Passage 4: Narrative \u2013 The Missed Bus Jasper raced down the hill, bag swinging wildly, heart pounding. The bus doors began to close. With a final leap, he thudded against the side, too late. As the bus rolled away, he stood breathless, defeated. But then a voice\u2014'Hey, need a lift?'\u2014and he turned to see a familiar face smiling from a car."
+  },
+  {
+    "q": "What is the central theme of the poem?",
+    "options": [
+      "Time and precision",
+      "Nature and beauty",
+      "Music and sound",
+      "Speed and energy"
+    ],
+    "answer": 0,
+    "passage": "Passage 5: Poem \u2013 'The Clockmaker\u2019s Hands' Tick by tick the cogs align,\nIn dusty corners, hands refine.\nThe maker bends with silent care,\nAdjusting time that isn\u2019t there.\n\nGears and wheels in quiet spin,\nMarking loss and days within.\nEach small tick a whispered call,\nTo moments lost beyond the wall."
+  },
+  {
+    "q": "What does 'Adjusting time that isn\u2019t there' imply?",
+    "options": [
+      "Fixing clocks",
+      "Fixing time itself",
+      "Being late",
+      "Stopping time"
+    ],
+    "answer": 1,
+    "passage": "Passage 5: Poem \u2013 'The Clockmaker\u2019s Hands' Tick by tick the cogs align,\nIn dusty corners, hands refine.\nThe maker bends with silent care,\nAdjusting time that isn\u2019t there.\n\nGears and wheels in quiet spin,\nMarking loss and days within.\nEach small tick a whispered call,\nTo moments lost beyond the wall."
+  },
+  {
+    "q": "What mood does the poem create?",
+    "options": [
+      "Chaotic",
+      "Peaceful",
+      "Reflective",
+      "Joyful"
+    ],
+    "answer": 2,
+    "passage": "Passage 5: Poem \u2013 'The Clockmaker\u2019s Hands' Tick by tick the cogs align,\nIn dusty corners, hands refine.\nThe maker bends with silent care,\nAdjusting time that isn\u2019t there.\n\nGears and wheels in quiet spin,\nMarking loss and days within.\nEach small tick a whispered call,\nTo moments lost beyond the wall."
+  },
+  {
+    "q": "What do 'whispered call' and 'moments lost' suggest?",
+    "options": [
+      "Celebration",
+      "Memory and longing",
+      "Laughter",
+      "Time travel"
+    ],
+    "answer": 1,
+    "passage": "Passage 5: Poem \u2013 'The Clockmaker\u2019s Hands' Tick by tick the cogs align,\nIn dusty corners, hands refine.\nThe maker bends with silent care,\nAdjusting time that isn\u2019t there.\n\nGears and wheels in quiet spin,\nMarking loss and days within.\nEach small tick a whispered call,\nTo moments lost beyond the wall."
+  },
+  {
+    "options": [
+      "Careless",
+      "Frustrated",
+      "Patient",
+      "Quick"
+    ],
+    "answer": 2,
+    "passage": "Passage 5: Poem \u2013 'The Clockmaker\u2019s Hands' Tick by tick the cogs align,\nIn dusty corners, hands refine.\nThe maker bends with silent care,\nAdjusting time that isn\u2019t there.\n\nGears and wheels in quiet spin,\nMarking loss and days within.\nEach small tick a whispered call,\nTo moments lost beyond the wall."
+  },
+  {
+    "q": "Why does Jonas prefer the caf\u00e9?",
+    "options": [
+      "It\u2019s quieter",
+      "For snacks and caffeine",
+      "For free Wi-Fi",
+      "He dislikes the library"
+    ],
+    "answer": 1,
+    "passage": "Passage 6: Dialogue \u2013 Caf\u00e9 Decision Mila: So, caf\u00e9 or the library?\nJonas: Caf\u00e9. I need caffeine to survive this essay.\nMila: But it\u2019s loud there. Can you focus?\nJonas: I can tune it out. Plus, snacks.\nMila: Fine, but we\u2019re sitting near the back.\nJonas: Deal."
+  },
+  {
+    "q": "What does Mila think about the caf\u00e9?",
+    "options": [
+      "It\u2019s too expensive",
+      "It\u2019s too crowded",
+      "It\u2019s too noisy",
+      "It has bad snacks"
+    ],
+    "answer": 2,
+    "passage": "Passage 6: Dialogue \u2013 Caf\u00e9 Decision Mila: So, caf\u00e9 or the library?\nJonas: Caf\u00e9. I need caffeine to survive this essay.\nMila: But it\u2019s loud there. Can you focus?\nJonas: I can tune it out. Plus, snacks.\nMila: Fine, but we\u2019re sitting near the back.\nJonas: Deal."
+  },
+  {
+    "q": "What does the tone of the conversation suggest?",
+    "options": [
+      "They\u2019re arguing",
+      "They\u2019re indifferent",
+      "They\u2019re friendly",
+      "They\u2019re strangers"
+    ],
+    "answer": 2,
+    "passage": "Passage 6: Dialogue \u2013 Caf\u00e9 Decision Mila: So, caf\u00e9 or the library?\nJonas: Caf\u00e9. I need caffeine to survive this essay.\nMila: But it\u2019s loud there. Can you focus?\nJonas: I can tune it out. Plus, snacks.\nMila: Fine, but we\u2019re sitting near the back.\nJonas: Deal."
+  },
+  {
+    "options": [
+      "Avoidant",
+      "Accepting",
+      "Panicked",
       "Confused"
     ],
-    "answer": 2
+    "answer": 1,
+    "passage": "Passage 6: Dialogue \u2013 Caf\u00e9 Decision Mila: So, caf\u00e9 or the library?\nJonas: Caf\u00e9. I need caffeine to survive this essay.\nMila: But it\u2019s loud there. Can you focus?\nJonas: I can tune it out. Plus, snacks.\nMila: Fine, but we\u2019re sitting near the back.\nJonas: Deal."
   },
   {
-    "q": "What action does the writer want the council to take?",
+    "q": "Which compromise do they make?",
     "options": [
-      "Close the parks",
-      "Provide free plastic bags",
-      "Organize park events",
-      "Install more bins and fine litterers"
+      "Don\u2019t go",
+      "Choose a different place",
+      "Sit near the back",
+      "Take turns choosing"
     ],
-    "answer": 3
+    "answer": 2,
+    "passage": "Passage 6: Dialogue \u2013 Caf\u00e9 Decision Mila: So, caf\u00e9 or the library?\nJonas: Caf\u00e9. I need caffeine to survive this essay.\nMila: But it\u2019s loud there. Can you focus?\nJonas: I can tune it out. Plus, snacks.\nMila: Fine, but we\u2019re sitting near the back.\nJonas: Deal."
   },
   {
-    "q": "What is the main message of the poem 'The Clock'?",
+    "q": "What is the cartoon mainly criticizing?",
     "options": [
-      "Time is loud and fast",
-      "Clocks need fixing",
-      "Time moves continuously and should be valued",
-      "Seconds are noisy"
+      "Office d\u00e9cor",
+      "Unrealistic productivity demands",
+      "Employee laziness",
+      "Teamwork issues"
     ],
-    "answer": 2
+    "answer": 1,
+    "passage": "Passage 7: Cartoon Description \u2013 \u201cOffice Efficiency\u201d In the cartoon, a manager stands next to an enormous chart labeled 'Productivity Goals.' An employee, hidden beneath stacks of papers, raises one hand and says, 'I'll finish this\u2026 once I can see my desk again.'"
   },
   {
-    "q": "Which phrase best shows the passing of time?",
+    "q": "What does the employee\u2019s comment imply?",
     "options": [
-      "gentle tones",
-      "whisper in the air",
-      "The clock keeps moving on",
-      "Each second ticking"
+      "He's efficient",
+      "He's buried in work",
+      "He\u2019s quitting",
+      "He lost his pen"
     ],
-    "answer": 3
+    "answer": 1,
+    "passage": "Passage 7: Cartoon Description \u2013 \u201cOffice Efficiency\u201d In the cartoon, a manager stands next to an enormous chart labeled 'Productivity Goals.' An employee, hidden beneath stacks of papers, raises one hand and says, 'I'll finish this\u2026 once I can see my desk again.'"
   },
   {
-    "q": "What literary device is used in 'A whisper in the air'?",
+    "q": "What visual exaggeration is used?",
     "options": [
-      "Simile",
-      "Metaphor",
-      "Hyperbole",
-      "Personification"
+      "Tiny office",
+      "Giant paper stacks",
+      "Floating manager",
+      "Missing chart"
     ],
-    "answer": 3
+    "answer": 1,
+    "passage": "Passage 7: Cartoon Description \u2013 \u201cOffice Efficiency\u201d In the cartoon, a manager stands next to an enormous chart labeled 'Productivity Goals.' An employee, hidden beneath stacks of papers, raises one hand and says, 'I'll finish this\u2026 once I can see my desk again.'"
   },
   {
-    "q": "What is the purpose of the article about honeybees?",
     "options": [
-      "To describe a queen bee\u2019s appearance",
-      "To explain the structure of a bee colony",
-      "To warn people about bee stings",
-      "To describe how honey is made"
+      "Serious",
+      "Threatening",
+      "Satirical",
+      "Boring"
     ],
-    "answer": 1
+    "answer": 2,
+    "passage": "Passage 7: Cartoon Description \u2013 \u201cOffice Efficiency\u201d In the cartoon, a manager stands next to an enormous chart labeled 'Productivity Goals.' An employee, hidden beneath stacks of papers, raises one hand and says, 'I'll finish this\u2026 once I can see my desk again.'"
   },
   {
-    "q": "How long does a worker bee usually live?",
+    "q": "What does the cartoon say about workplace pressures?",
     "options": [
-      "Several years",
-      "About one week",
-      "Six weeks",
-      "One year"
+      "They're improving",
+      "They\u2019re ignored",
+      "They overwhelm employees",
+      "They\u2019re funny"
     ],
-    "answer": 2
+    "answer": 2,
+    "passage": "Passage 7: Cartoon Description \u2013 \u201cOffice Efficiency\u201d In the cartoon, a manager stands next to an enormous chart labeled 'Productivity Goals.' An employee, hidden beneath stacks of papers, raises one hand and says, 'I'll finish this\u2026 once I can see my desk again.'"
   },
   {
-    "q": "Why are honeybees important to humans?",
+    "q": "What is the main issue discussed in the passage?",
     "options": [
-      "They protect crops from pests",
-      "They help plants grow by pollinating them",
-      "They produce oxygen",
-      "They clean the air"
+      "Air pollution",
+      "Plastic pollution",
+      "Overfishing",
+      "Recycling costs"
     ],
-    "answer": 1
+    "answer": 1,
+    "passage": "Passage 8: Informational \u2013 Plastic Pollution Plastic pollution has become one of the most pressing environmental issues, with millions of tons of plastic waste ending up in oceans each year. Much of this waste harms marine life, who ingest or become entangled in plastic debris. Efforts to reduce plastic use include bans on single-use items and promoting biodegradable alternatives."
   },
   {
-    "q": "What does the word 'colony' most closely mean in the context of the honeybee passage?",
+    "q": "What is one consequence of plastic waste in oceans?",
     "options": [
-      "A small house",
-      "A group living together",
-      "A queen\u2019s palace",
-      "A flower field"
+      "More tourism",
+      "Faster sea currents",
+      "Harm to marine life",
+      "Better fishing"
     ],
-    "answer": 1
+    "answer": 2,
+    "passage": "Passage 8: Informational \u2013 Plastic Pollution Plastic pollution has become one of the most pressing environmental issues, with millions of tons of plastic waste ending up in oceans each year. Much of this waste harms marine life, who ingest or become entangled in plastic debris. Efforts to reduce plastic use include bans on single-use items and promoting biodegradable alternatives."
   },
   {
-    "q": "In the poem 'The Clock', what mood is created by the phrase 'gentle tones'?",
+    "q": "What solution is suggested in the passage?",
     "options": [
-      "Harsh and demanding",
-      "Soft and reflective",
-      "Loud and urgent",
-      "Excited and cheerful"
+      "Increasing plastic use",
+      "Banning all ocean activity",
+      "Using biodegradable materials",
+      "Cleaning rivers only"
     ],
-    "answer": 1
+    "answer": 2,
+    "passage": "Passage 8: Informational \u2013 Plastic Pollution Plastic pollution has become one of the most pressing environmental issues, with millions of tons of plastic waste ending up in oceans each year. Much of this waste harms marine life, who ingest or become entangled in plastic debris. Efforts to reduce plastic use include bans on single-use items and promoting biodegradable alternatives."
   },
   {
-    "q": "In the dog and the shadow story, what caused the dog to lose his bone?",
+    "q": "What tone does the author use?",
     "options": [
-      "Another dog attacked him",
-      "He got scared",
-      "He was trying to grab a reflection",
-      "He fell into the water"
+      "Humorous",
+      "Sarcastic",
+      "Concerned",
+      "Excited"
     ],
-    "answer": 2
+    "answer": 2,
+    "passage": "Passage 8: Informational \u2013 Plastic Pollution Plastic pollution has become one of the most pressing environmental issues, with millions of tons of plastic waste ending up in oceans each year. Much of this waste harms marine life, who ingest or become entangled in plastic debris. Efforts to reduce plastic use include bans on single-use items and promoting biodegradable alternatives."
   },
   {
-    "q": "Which of the following best describes the role of the worker bee?",
+    "q": "What does 'single-use items' refer to?",
     "options": [
-      "To lay eggs",
-      "To sting enemies",
-      "To gather nectar and maintain the hive",
-      "To rule the colony"
+      "Items used once",
+      "Reusable bottles",
+      "Permanent objects",
+      "Digital products"
     ],
-    "answer": 2
+    "answer": 0,
+    "passage": "Passage 8: Informational \u2013 Plastic Pollution Plastic pollution has become one of the most pressing environmental issues, with millions of tons of plastic waste ending up in oceans each year. Much of this waste harms marine life, who ingest or become entangled in plastic debris. Efforts to reduce plastic use include bans on single-use items and promoting biodegradable alternatives."
   },
   {
-    "q": "What is the main similarity between the poem 'The Clock' and the article on honeybees?",
+    "q": "How did Lena feel at the end of the book?",
     "options": [
-      "Both describe loud creatures",
-      "Both mention how time is managed",
-      "Both focus on the importance of small things",
-      "Both are about animals"
+      "Angry",
+      "Relieved",
+      "Sentimental",
+      "Confused"
     ],
-    "answer": 2
+    "answer": 2,
+    "passage": "Passage 9: Narrative \u2013 The Last Page Lena closed the book slowly, her eyes lingering on the final line. It felt like saying goodbye to a friend. She had read the novel every night for weeks. Now, it was over. She sighed, hugging it to her chest, already wondering what to read next."
   },
   {
-    "q": "In the letter to the editor, what does the writer believe about the current park situation?",
+    "q": "What does the phrase 'saying goodbye to a friend' suggest?",
     "options": [
-      "There is too much wildlife",
-      "People are enjoying cleaner parks",
-      "Littering is a growing problem",
-      "There are not enough visitors"
+      "She disliked the ending",
+      "She personified the book",
+      "She knew the author",
+      "She was in the story"
     ],
-    "answer": 2
+    "answer": 1,
+    "passage": "Passage 9: Narrative \u2013 The Last Page Lena closed the book slowly, her eyes lingering on the final line. It felt like saying goodbye to a friend. She had read the novel every night for weeks. Now, it was over. She sighed, hugging it to her chest, already wondering what to read next."
   },
   {
-    "q": "What does the dog in the story mistake his reflection for?",
+    "q": "Why is Lena hugging the book?",
     "options": [
-      "Another bone",
-      "Another dog with a bigger bone",
-      "A shadow",
-      "Water"
+      "It\u2019s cold",
+      "She needs comfort",
+      "She\u2019s thankful for the story",
+      "It\u2019s new"
     ],
-    "answer": 1
+    "answer": 2,
+    "passage": "Passage 9: Narrative \u2013 The Last Page Lena closed the book slowly, her eyes lingering on the final line. It felt like saying goodbye to a friend. She had read the novel every night for weeks. Now, it was over. She sighed, hugging it to her chest, already wondering what to read next."
   },
   {
-    "q": "Why does the author include the line 'A whisper in the air' in the poem?",
+    "q": "What is implied by her wondering what to read next?",
     "options": [
-      "To describe wind",
-      "To show how loud time is",
-      "To create a peaceful image",
-      "To warn about danger"
+      "She reads often",
+      "She\u2019s picky",
+      "She didn\u2019t finish the book",
+      "She disliked the story"
     ],
-    "answer": 2
+    "answer": 0,
+    "passage": "Passage 9: Narrative \u2013 The Last Page Lena closed the book slowly, her eyes lingering on the final line. It felt like saying goodbye to a friend. She had read the novel every night for weeks. Now, it was over. She sighed, hugging it to her chest, already wondering what to read next."
   },
   {
-    "q": "What would be the best title for the article about bees?",
+	"q": "The tone of the passage is:",
     "options": [
-      "The Bee Sting Mystery",
-      "The Buzzing Garden",
-      "Inside the Life of a Hive",
-      "Bees: Our Flying Enemies"
+      "Energetic",
+      "Melancholy but warm",
+      "Comedic",
+      "Dull"
     ],
-    "answer": 2
-  },
-  {
-    "q": "Which of the following best summarizes the dog\u2019s experience in the story?",
-    "options": [
-      "He was rewarded for his patience",
-      "He lost everything due to greed",
-      "He found a friend",
-      "He crossed safely with his bone"
-    ],
-    "answer": 1
-  },
-  {
-    "q": "Why does the author of the letter to the editor use specific examples like bottles and wrappers?",
-    "options": [
-      "To entertain the reader",
-      "To exaggerate the situation",
-      "To provide evidence of the problem",
-      "To describe recycling methods"
-    ],
-    "answer": 2
-  },
-  {
-    "q": "What can the reader learn from the poem 'The Clock'?",
-    "options": [
-      "Clocks are always ticking",
-      "Time is precious and should not be wasted",
-      "It\u2019s important to own a watch",
-      "Digital clocks are better"
-    ],
-    "answer": 1
+    "answer": 1,
+    "passage": "Passage 9: Narrative \u2013 The Last Page Lena closed the book slowly, her eyes lingering on the final line. It felt like saying goodbye to a friend. She had read the novel every night for weeks. Now, it was over. She sighed, hugging it to her chest, already wondering what to read next."
   }
 ];

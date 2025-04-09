@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -11,14 +11,20 @@
       padding: 20px;
       display: flex;
       justify-content: center;
+      background-color: #f0f8ff;
     }
     .container {
       max-width: 700px;
       width: 100%;
       text-align: center;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     h1 {
-      text-align: center;
+      color: #2a2a2a;
+      margin-bottom: 30px;
     }
     .question {
       margin-bottom: 20px;
@@ -28,63 +34,15 @@
       display: block;
       margin-left: 20px;
       text-align: left;
-    }
-    .submit-btn, .next-btn, .prev-btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-    }
-    .result {
-      font-weight: bold;
-      margin-top: 20px;
-      text-align: left;
-    }
-    .feedback {
-      font-style: italic;
-      margin-top: 5px;
-      text-align: left;
-    }
-    #timer {
-      font-size: 18px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    #submitButton {
-      display: none;
-    }
-  
-    .question p {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-  
-    .options input[type="radio"]:checked + span {
-      background-color: #d0f0c0;
-      padding: 2px 5px;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
-    .question p {
-      font-size: 22px;
-      font-weight: 600;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-    }
-
-    .options label {
       font-size: 18px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 8px 0;
       cursor: pointer;
     }
-
     .options input[type="radio"] {
       margin-right: 10px;
       transform: scale(1.2);
     }
-
     .options input[type="radio"]:checked + span {
       background-color: #d0f0c0;
       padding: 4px 8px;
@@ -92,7 +50,40 @@
       font-weight: bold;
       display: inline-block;
     }
-
+    .question p {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+    .submit-btn, .next-btn, .prev-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .submit-btn:hover, .next-btn:hover, .prev-btn:hover {
+      background-color: #005fa3;
+    }
+    .result {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: left;
+      background-color: #e7f4e4;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 5px solid #4caf50;
+    }
+    .feedback {
+      font-style: italic;
+      margin-top: 5px;
+      text-align: left;
+    }
     #timer {
       font-size: 24px;
       font-weight: bold;
@@ -107,52 +98,13 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       z-index: 10;
     }
-
-    body {
-      background-color: #f0f8ff;
-    }
-
-    .container {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      color: #2a2a2a;
-      margin-bottom: 30px;
-    }
-
-    .submit-btn, .next-btn, .prev-btn {
-      background-color: #007acc;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .submit-btn:hover, .next-btn:hover, .prev-btn:hover {
-      background-color: #005fa3;
-    }
-
-    .result {
-      background-color: #e7f4e4;
-      padding: 15px;
-      border-radius: 8px;
-      border-left: 5px solid #4caf50;
-    }
-
     .prev-btn {
       margin-right: 20px;
-    }
-
-    .prev-btn, .next-btn {
       width: 180px;
-      text-align: center;
     }
-
+    .next-btn {
+      width: 180px;
+    }
     .button-container {
       position: fixed;
       bottom: 30px;
@@ -168,27 +120,24 @@
 </head>
 <body>
 <div class="container">
-<div style="margin-bottom: 20px;">
-  <label for="setSelector"><strong>Select a Question Set:</strong></label>
-  <select id="setSelector" onchange="location.href='?set=' + this.value">
-    <option value="ProbabilityQuestions.js">Probability</option>
-    <option value="AlgebraQuestions.js">Algebra</option>
-    <option value="FinancialQuestions.js">Financial</option>
-    <option value="questions_5.js">Set 5</option>
-  </select>
-</div>
+  <div style="margin-bottom: 20px;">
+    <label for="setSelector"><strong>Select a Question Set:</strong></label>
+    <select id="setSelector" onchange="location.href='?set=' + this.value">
+      <option value="ProbabilityQuestions.js">Probability</option>
+      <option value="AlgebraQuestions.js">Algebra</option>
+      <option value="FinancialQuestions.js">Financial</option>
+      <option value="ReadingQuestions1.js">Reading1</option>
+      <option value="ReadingQuestions2.js">Reading2</option>  
+    </select>
+  </div>
 
-<h1>Year 8 Selective Quiz!</h1>
-<div id="timer">Time Remaining: <span id="time">40:00</span></div>
-<div id="quizContainer" style="display:none;">
-  <form id="quizForm"></form>
-  <button class="submit-btn" id="submitButton" onclick="submitQuiz()">Submit Quiz</button>
-  <div class="result" id="result"></div>
+  <h1>Year 8 Selective Quiz!</h1>
+  <div id="timer">Time Remaining: <span id="time">40:00</span></div>
+  <div id="quizContainer" style="display:none;">
+    <form id="quizForm" onsubmit="event.preventDefault();"></form>    
+    <div class="result" id="result"></div>
+  </div>
 </div>
-<div id="quizContainer" style="display:none;"><form id="quizForm"></form></div>
-
-</div>
-
 
 <script>
 function getQueryParam(param) {
@@ -212,7 +161,7 @@ function loadSet(setFile) {
   document.getElementById("quizContainer").style.display = "none";
 
   loadScript(setFile, "quizScript", function() {
-    loadScript("quiz_logic.js", "logicScript", function() {
+    loadScript("quiz_logic_final.js", "logicScript", function() {
       currentQuestion = 0;
       answers = Array(questions.length).fill(null);
       document.getElementById("quizContainer").style.display = "block";
@@ -228,9 +177,5 @@ window.onload = function () {
   loadSet(selectedSet);
 };
 </script>
-
-
-
-
 </body>
 </html>

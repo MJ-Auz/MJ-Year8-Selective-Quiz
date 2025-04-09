@@ -6,6 +6,15 @@ const form = document.getElementById("quizForm");
 function renderQuestion(index) {
   form.innerHTML = "";
   const question = questions[index];
+
+  // Add passage rendering
+  if (question.passage) {
+    const passageDiv = document.createElement("div");
+    passageDiv.className = "passage";
+    passageDiv.innerHTML = `<p style="font-style: italic; background-color: #f9f9f9; padding: 12px; border-radius: 8px; margin-bottom: 20px;">${question.passage}</p>`;
+    form.appendChild(passageDiv);
+  }
+
   const div = document.createElement("div");
   div.className = "question";
   div.innerHTML = `<p><strong>Question ${index + 1}:</strong></p><p>${question.q}</p>`;
@@ -22,13 +31,14 @@ function renderQuestion(index) {
 
   const buttonContainer = document.createElement("div");
   buttonContainer.className = "button-container";
+  buttonContainer.id = "navButtons";
 
   if (index > 0) {
     const prevBtn = document.createElement("button");
     prevBtn.textContent = "Previous Question";
     prevBtn.className = "prev-btn";
+    prevBtn.type = "button";
     prevBtn.onclick = function(e) {
-      this.style.display = "none";
       e.preventDefault();
       saveAnswer(index);
       currentQuestion--;
@@ -40,6 +50,7 @@ function renderQuestion(index) {
   const nextBtn = document.createElement("button");
   nextBtn.textContent = index < questions.length - 1 ? "Next Question" : "Finish";
   nextBtn.className = "next-btn";
+  nextBtn.type = "button";
   nextBtn.onclick = function(e) {
     e.preventDefault();
     saveAnswer(index);
@@ -48,9 +59,6 @@ function renderQuestion(index) {
       currentQuestion++;
       renderQuestion(currentQuestion);
     } else {
-      nextBtn.style.display = "none";
-      const prevBtn = document.querySelector(".prev-btn");
-      if (prevBtn) prevBtn.remove();
       submitQuiz();
     }
   };
@@ -82,7 +90,7 @@ function checkAnswer(index) {
 
 function submitQuiz() {
   let score = 0;
-  let summaryHTML = '<h2>Summary</h2><ul>';
+  let summaryHTML = '<h2>Quiz Summary</h2><ul>';
   answers.forEach((answer, i) => {
     const isCorrect = answer === questions[i].answer;
     const userAnswerText = answer !== null ? questions[i].options[answer] : "No answer";
@@ -94,7 +102,10 @@ function submitQuiz() {
                     `<span style='color:${isCorrect ? "green" : "red"}'>${isCorrect ? "Correct" : "Incorrect"}</span></li><br>`;
   });
   summaryHTML += '</ul>';
-  document.getElementById("result").innerHTML = `You scored ${score} out of ${questions.length}` + summaryHTML;
+  document.getElementById("result").innerHTML = `You scored ${score} out of ${questions.length}.<br><br>` + summaryHTML;
+
+  const nav = document.getElementById("navButtons");
+  if (nav) nav.style.display = "none";
 }
 
 function startTimer(duration) {
